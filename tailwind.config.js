@@ -1,16 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./public/**/*.{html,js}",
-    "./node_modules/flowbite/**/*.js"
-  ],
+  content: ['./public/**/*.{html,js}', './node_modules/flowbite/**/*.js'],
   theme: {
     fontFamily: {
-      'sans': ['Inter', 'sans-serif'],
+      sans: ['Inter', 'sans-serif'],
     },
     extend: {},
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-}
+  plugins: [require('flowbite/plugin')],
+  darkMode: 'class',
+};
