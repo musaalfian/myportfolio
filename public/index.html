@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav
-        class="bg-white px-40 container dark:bg-gray-900 fixed z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+        class="bg-white px-0 lg:px-20 xl:px-40 w-full dark:bg-gray-900 fixed z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
       >
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -27,7 +27,7 @@
             <a
               href="#contact"
               type="button"
-              class="text-white bg-blue-500 hover:bg-blue-600 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white hidden md:block bg-blue-500 hover:bg-blue-600 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Contact Me
             </a>
@@ -96,13 +96,23 @@
                   >Experience</a
                 >
               </li>
+              <li class="md:hidden">
+                <a
+                  href="#contact"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Contact Me</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section id="home" class="bg-gradient-to-b from-sky-300 to-sky-100 pt-40 px-40">
+      <section
+        id="home"
+        class="bg-gradient-to-b from-sky-300 to-sky-100 pt-32 lg:pt-40 px-4 sm:px-10 md:px-20 lg:px-40"
+      >
         <div class="relative w-fit mx-auto">
           <img
             src="./img/pas-foto.jpg"
@@ -112,40 +122,43 @@
           />
           <div class="text-3xl absolute bottom-0 right-0">👋</div>
         </div>
-        <h1 class="text-3xl w-3/4 mx-auto text-center leading-normal">
+        <h1 class="text-2xl md:text-3xl w-full xl:w-3/4 mx-auto text-center leading-normal md:leading-relaxed">
           Hello, I'm <span class="font-bold">Musa</span>. I'm a
           <span class="font-bold">full-stack web developer</span> with little years of experience. I enjoy building
           <span class="font-bold">sites & apps</span>. My focus is <span class="font-bold">React</span> and
           <span class="font-bold">Laravel</span>.
         </h1>
-        <div class="mt-5 flex gap-3 justify-center">
+        <div class="mt-5 md:mt-7 flex flex-wrap gap-3 justify-center">
           <button
-            class="min-h-12 py-2 px-7 bg-blue-600 hover:bg-blue-700 duration-300 text-white font-semibold rounded-full"
+            class="min-h-12 py-2 px-7 basis-4/5 min-[375px]:basis-auto bg-blue-600 hover:bg-blue-700 duration-300 text-white font-semibold rounded-full"
           >
             Download CV <i class="fa-solid fa-cloud-arrow-down ms-2"></i>
           </button>
           <a
             href="https://www.linkedin.com/in/musaalfian/"
             target="_blank"
-            class="w-14 h-14 flex justify-center items-center rounded-full bg-white hover:bg-slate-50 hover:text-blue-600 duration-300"
+            class="w-12 h-12 xl:w-14 xl:h-14 flex justify-center items-center rounded-full bg-white hover:bg-slate-50 hover:text-blue-600 duration-300"
           >
             <i class="fa-brands fa-linkedin-in text-lg"></i>
           </a>
           <a
             href="https://github.com/musaalfian"
             target="_blank"
-            class="w-14 h-14 flex justify-center items-center rounded-full bg-white hover:bg-slate-50 hover:text-blue-600 duration-300"
+            class="w-12 h-12 xl:w-14 xl:h-14 flex justify-center items-center rounded-full bg-white hover:bg-slate-50 hover:text-blue-600 duration-300"
           >
             <i class="fa-brands fa-github text-lg"></i>
           </a>
         </div>
         <div class="mt-24">
-          <div class="w-2 h-20 rounded-lg mx-auto bg-slate-300"></div>
+          <div class="w-2 h-20 rounded-lg mx-auto bg-white"></div>
         </div>
       </section>
-      <section id="about" class="py-20 px-40 text-center bg-gradient-to-b from-sky-100">
-        <h2 class="text-3xl font-medium mb-6">About Me</h2>
-        <h3 class="text-md leading-8 w-3/4 mx-auto">
+      <section
+        id="about"
+        class="text-center bg-gradient-to-b from-sky-100 pt-32 px-4 min-[375px]:px-10 md:px-20 lg:px-40"
+      >
+        <h2 class="text-2xl md:text-3xl font-medium mb-6">About Me</h2>
+        <h3 class="text-md leading-8 mx-auto xl:w-3/4">
           As I tread the final steps of my Computer Science journey at Diponegoro University (Indonesia), I've
           transformed my academic foundation into a dynamic skill set through internships and certifications. 🚀 With
           1++ years of hands-on experience as a frontend web developer, I bring expertise in JavaScript, TailwindCSS,
@@ -161,11 +174,14 @@
           >
         </h3>
       </section>
-      <section id="project" class="py-20">
-        <h2 class="text-3xl font-medium mb-8 text-center">My Project</h2>
-        <div class="flex flex-col w-1/2 mx-auto gap-10">
-          <div class="ps-8 flex border-slate-200 duration-300 border rounded-lg bg-slate-100 group">
-            <div class="basis-1/2 py-8 pe-6">
+      <section id="project" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40">
+        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center">My Project</h2>
+        <div class="flex flex-col xl:w-3/4 mx-auto gap-10">
+          <!-- POS Apotek -->
+          <div
+            class="ps-0 md:ps-8 flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
+          >
+            <div class="basis-1/2 p-4 md:py-8 md:pe-6">
               <h3 class="text-xl font-bold text-slate-900">Point Of Sale Apotek</h3>
               <p class="text-md leading-7 mt-3 text-slate-700">
                 Aplikasi berbasis website untuk melakukan transaksi dan mengotomatisasikan proses penjualan, termasuk
@@ -178,25 +194,28 @@
                 <p class="rounded-full py-2 px-4 bg-slate-600 text-white text-xs uppercase">ExcelJS</p>
               </div>
             </div>
-            <div class="basis-1/2">
+            <div class="basis-1/2 overflow-hidden">
               <img
                 src="./img/apotek.png"
                 width="100%"
                 alt=""
-                class="h-full object-cover rounded-r-md object-left group-hover:scale-105 duration-300"
+                class="min-h-52 h-full object-cover rounded-t-md md:rounded-l-none md:rounded-r-md object-left group-hover:scale-105 duration-300"
               />
             </div>
           </div>
-          <div class="pe-8 flex border-slate-200 duration-300 border rounded-lg bg-slate-100 group">
-            <div class="basis-1/2">
+          <!-- Sistem manajemen surat -->
+          <div
+            class="pe-0 md:pe-8 flex flex-wrap md:flex-nowrap border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
+          >
+            <div class="basis-full md:basis-1/2 overflow-hidden">
               <img
                 src="./img/simas.png"
                 width="100%"
                 alt=""
-                class="h-full object-cover rounded-l-md object-left group-hover:scale-105 duration-300"
+                class="h-full object-cover rounded-t-md md:rounded-l-md md:rounded-r-none object-left group-hover:scale-105 duration-300"
               />
             </div>
-            <div class="basis-1/2 py-8 ps-6">
+            <div class="basis-full md:basis-1/2 p-4 md:py-8 md:ps-6">
               <h3 class="text-xl font-bold text-slate-900">Sistem Manajemen Surat</h3>
               <p class="text-md leading-7 mt-3 text-slate-700">
                 Aplikasi berbasis website yang digunakan dalam pengelolaan surat di Fakultas Kedokteran Universitas
@@ -209,13 +228,16 @@
               </div>
             </div>
           </div>
-          <div class="ps-8 flex border-slate-200 duration-300 border rounded-lg bg-slate-100 group">
-            <div class="basis-1/2 py-8 pe-6">
+          <!-- Pemesanan tisu online -->
+          <div
+            class="ps-0 md:ps-8 flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
+          >
+            <div class="basis-1/2 p-4 md:py-8 md:pe-6">
               <h3 class="text-xl font-bold text-slate-900">Pemesanan Tisu Online</h3>
               <p class="text-md leading-7 mt-3 text-slate-700">
-                Aplikasi berbasis website yang memberikan kemudahan bagi konsumen untuk membeli produk tissu yang
-                diinginkan. Melalui platform ini, pengguna dapat memilih berbagai macam produk dan melakukan pemesanan
-                kepada penjual secara langsung melalui Whatsapp.
+                Aplikasi berbasis website yang memberikan kemudahan bagi konsumen untuk membeli tissu sesuai kebutuhan.
+                Melalui platform ini, pengguna dapat memilih berbagai macam produk dan melakukan pemesanan secara
+                langsung melalui Whatsapp.
               </p>
               <div class="flex gap-2 mt-3 flex-wrap">
                 <p class="rounded-full py-2 px-4 bg-slate-600 text-white text-xs uppercase">Laravel v.8.0</p>
@@ -223,39 +245,95 @@
                 <p class="rounded-full py-2 px-4 bg-slate-600 text-white text-xs uppercase">Intervention Image v.2</p>
               </div>
             </div>
-            <div class="basis-1/2">
+            <div class="basis-1/2 overflow-hidden">
               <img
                 src="./img/tisumurah.png"
                 width="100%"
                 alt=""
-                class="h-full object-cover rounded-r-md object-left group-hover:scale-105 duration-300"
+                class="min-h-52 h-full object-cover rounded-t-md md:rounded-l-none md:rounded-r-md object-left group-hover:scale-105 duration-300"
               />
             </div>
           </div>
         </div>
       </section>
-      <section id="skill" class="py-20">
-        <h2 class="text-3xl font-medium mb-8 text-center">My Skill</h2>
-        <div class="flex flex-wrap justify-center gap-4 w-3/4 mx-auto">
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">HTML</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">CSS</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">JavaScript</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">PHP</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">Bootstrap</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">TailwindCSS</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">Flowbite</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">JQuery</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">React</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">ChartJS</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">CodeIgniter</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">Laravel</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">Figma</h3>
-          <h3 class="py-3 px-6 border border-slate-400 rounded-lg text-md">Canva</h3>
+      <section id="skill" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40">
+        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center">My Skill</h2>
+        <div class="flex flex-wrap justify-center gap-4 w-full md:w-3/4 mx-auto">
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            HTML
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            CSS
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            JavaScript
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            PHP
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            Bootstrap
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            TailwindCSS
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            Flowbite
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            JQuery
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            React
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            ChartJS
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            CodeIgniter
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            Laravel
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            Figma
+          </h3>
+          <h3
+            class="py-3 px-6 border border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
+          >
+            Canva
+          </h3>
         </div>
       </section>
-      <section id="experience" class="py-20">
-        <h2 class="text-3xl font-medium mb-12 text-center">My Experience</h2>
-        <div class="w-1/2 mx-auto">
+      <section id="experience" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40">
+        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center">My Experience</h2>
+        <div class="w-10/12 xl:w-3/4 mx-auto">
           <ol class="relative border-s border-gray-200 dark:border-gray-700">
             <li class="mb-10 ms-8">
               <span
@@ -263,32 +341,34 @@
               >
                 💼
               </span>
-              <h3 class="flex items-center mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+              <h3
+                class="flex flex-wrap gap-2 items-center mb-3 xl:mb-2 text-lg font-semibold text-gray-900 dark:text-white"
+              >
                 Staff IT Fakultas Kedokteran Universitas Diponegoro
                 <span
-                  class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ms-3"
-                  >Now</span
+                  class="bg-blue-100 text-blue-800 text-sm font-medium md:me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 md:ms-3"
+                  >Main job</span
                 >
               </h3>
               <time class="block mb-5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                >September 2022 - Sekarang</time
+                >Sep 2022 - Sekarang</time
               >
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Pengembangan Perangkat Lunak. Bertanggung jawab atas pengembangan perangkat lunak berbasis website
                 yang inovatif dan sesuai kebutuhan, meningkatkan efisiensi dan kinerja instansi Fakultas Kedokteran
                 UNDIP.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Jurnalis Digital Fakultas. Menyajikan liputan dan dokumentasi terkait kegiatan fakultas untuk
                 menghasilkan konten berita yang informatif dan menarik, memastikan informasi terkini terpublikasikan
                 dengan baik di website utama.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Kreativitas Visual di Media Sosial. Membuat feed, instastory, dan video reels kreatif di akun
                 Instagram Fakultas. Merangkum secara singkat dan menarik kegiatan fakultas melalui medium visual,
                 menjadikan akun media sosial sebagai saluran komunikasi yang atraktif.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Desain Grafis Multifungsi. Merancang desain grafis sesuai kebutuhan fakultas, mulai dari background
                 acara hingga virtual background, brosur, dan materi visual lainnya. Memberikan nilai estetik dalam
                 konsep desain minimalis dan profesional.
@@ -300,21 +380,26 @@
               >
                 💼
               </span>
-              <h3 class="flex items-center mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-                Front End Web Developer - CV. Laksana Abadi Batang
+              <h3
+                class="flex flex-wrap gap-2 items-center mb-3 xl:mb-2 text-lg font-semibold text-gray-900 dark:text-white"
+              >
+                Front End Web Developer - CV. Laksana Abadi Batang<span
+                  class="bg-yellow-100 text-gray-800 text-sm font-medium md:me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 md:ms-3"
+                  >Contract</span
+                >
               </h3>
               <time class="block mb-5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                >September 2022 - November 2022</time
+                >Sep 2022 - Nov 2022</time
               >
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Membuat landing page company profile galangan kapal CV. Laksana Abadi Batang.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Desain Ramah Pengguna. Merancang tampilan website dengan fokus pada pengalaman pengguna yang ramah,
                 memastikan navigasi yang intuitif dan antarmuka yang mudah dipahami untuk meningkatkan interaksi yang
                 menyenangkan bagi pengunjung.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Responsivitas Layar. Membuat website responsif yang optimal di berbagai perangkat, mulai dari desktop
                 hingga perangkat mobile, memastikan bahwa pengalaman mengakses website tetap lancar dan menyenangkan
                 tanpa mengorbankan kualitas visual.
@@ -326,23 +411,28 @@
               >
                 💼
               </span>
-              <h3 class="flex items-center mb-2 text-lg font-semibold text-gray-900 dark:text-white">
-                Front End Web Developer - Dinas Pendidikan dan Kebudayaan Kabupaten Batang
+              <h3
+                class="flex flex-wrap xl:flex-nowrap gap-2 items-baseline mb-3 xl:mb-2 text-lg font-semibold text-gray-900 dark:text-white"
+              >
+                Front End Web Developer - Dinas Pendidikan dan Kebudayaan Kabupaten Batang<span
+                  class="bg-yellow-100 text-gray-800 text-sm font-medium md:me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 md:ms-3"
+                  >Internship</span
+                >
               </h3>
               <time class="block mb-5 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                >Februari 2022 - Mei 2022</time
+                >Feb 2022 - Mei 2022</time
               >
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Inovasi dalam Pendidikan. Mengembangkan sistem informasi yang memfasilitasi akses dan distribusi
                 bantuan biaya pendidikan bagi mahasiswa SMA/SMK Sederajat, calon mahasiswa, dan mahasiswa di Kabupaten
                 Batang.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Desain Ramah Pengguna. Merancang tampilan website dengan fokus pada pengalaman pengguna yang ramah,
                 memastikan navigasi dan antarmuka yang mudah dipahami untuk meningkatkan interaksi yang menyenangkan
                 bagi pengunjung.
               </p>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              <p class="mb-4 text-base font-normal text-slate-800 dark:text-gray-400">
                 🔥 Responsivitas Layar. Membuat website responsif yang optimal di berbagai perangkat, mulai dari desktop
                 hingga perangkat mobile, memastikan bahwa pengalaman mengakses website tetap lancar dan menyenangkan
                 tanpa mengorbankan kualitas visual.
@@ -351,14 +441,14 @@
           </ol>
         </div>
       </section>
-      <section id="contact" class="py-20">
-        <h2 class="text-3xl font-medium mb-8 text-center">Contact Me</h2>
-        <h3 class="text-md leading-8 w-3/4 mx-auto text-center">
+      <section id="contact" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40">
+        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center">Contact Me</h2>
+        <h3 class="text-md leading-8 w-full xl:w-3/4 mx-auto text-center">
           Hubungi saya secara langsung melaui email
           <a href="" target="_blank" class="underline">musaganteng071@gmail.com</a> <br />
           atau melalui form dibawah ini.
         </h3>
-        <div class="w-1/3 mx-auto mt-6">
+        <div class="w-full md:w-3/4 xl:w-3/5 mx-auto mt-6">
           <form>
             <div class="relative">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -399,7 +489,7 @@
               </div>
               <textarea
                 id="message"
-                rows="4"
+                rows="6"
                 class="block py-4 px-8 w-full ps-10 text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Tinggalkan pesan anda disini..."
               ></textarea>
@@ -414,7 +504,7 @@
         </div>
       </section>
     </main>
-    <footer class="py-6">
+    <footer class="pt-10 pb-6 px-4 text-center">
       <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2024 <a href="https://flowbite.com/" class="hover:underline">Musa Alfian Maulana™</a>. All Rights
         Reserved.</span
