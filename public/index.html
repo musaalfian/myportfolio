@@ -12,6 +12,9 @@
 
     <!-- Fontawesome Icons -->
     <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="fixed bottom-10 right-10 z-50">
@@ -124,6 +127,8 @@
     </header>
     <main>
       <section
+        data-aos="zoom-out"
+        data-aos-duration="800"
         id="home"
         class="bg-gradient-to-b from-sky-300 to-sky-100 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-800 pt-32 lg:pt-40 px-4 sm:px-10 md:px-20 lg:px-40"
       >
@@ -166,7 +171,7 @@
             <i class="fa-brands fa-github text-lg"></i>
           </a>
         </div>
-        <div class="mt-24">
+        <div data-aos="fade-up" data-aos-duration="800" class="mt-24">
           <div class="w-2 h-20 rounded-lg mx-auto bg-white"></div>
         </div>
       </section>
@@ -174,8 +179,10 @@
         id="about"
         class="text-center bg-gradient-to-b from-sky-100 dark:bg-gradient-to-b dark:from-slate-800 dark:to-slate-800 pt-32 px-4 min-[375px]:px-10 md:px-20 lg:px-40"
       >
-        <h2 class="text-2xl md:text-3xl font-medium mb-6 dark:text-white">About Me</h2>
-        <h3 class="text-md leading-8 mx-auto xl:w-3/4 dark:text-white">
+        <h2 data-aos="fade-up" data-aos-duration="800" class="text-2xl md:text-3xl font-medium mb-6 dark:text-white">
+          About Me
+        </h2>
+        <h3 data-aos="fade-up" data-aos-duration="800" class="text-md leading-8 mx-auto xl:w-3/4 dark:text-white">
           As I tread the final steps of my Computer Science journey at Diponegoro University (Indonesia), I've
           transformed my academic foundation into a dynamic skill set through internships and certifications. 🚀 With
           1++ years of hands-on experience as a frontend web developer, I bring expertise in JavaScript, TailwindCSS,
@@ -192,10 +199,18 @@
         </h3>
       </section>
       <section id="project" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40 dark:bg-slate-800">
-        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white">My Project</h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white"
+        >
+          My Project
+        </h2>
         <div class="flex flex-col xl:w-3/4 mx-auto gap-10">
           <!-- POS Apotek -->
           <div
+            data-aos="fade-up"
+            data-aos-duration="800"
             class="ps-0 md:ps-8 cursor-pointer flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
           >
             <div class="basis-1/2 p-4 md:py-8 md:pe-6">
@@ -222,6 +237,8 @@
           </div>
           <!-- Sistem manajemen surat -->
           <div
+            data-aos="fade-up"
+            data-aos-duration="800"
             class="pe-0 cursor-pointer md:pe-8 flex flex-wrap md:flex-nowrap border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
           >
             <div class="basis-full md:basis-1/2 overflow-hidden">
@@ -247,6 +264,8 @@
           </div>
           <!-- Pemesanan tisu online -->
           <div
+            data-aos="fade-up"
+            data-aos-duration="800"
             class="ps-0 cursor-pointer md:ps-8 flex flex-wrap md:flex-nowrap flex-col-reverse md:flex-row border-slate-200 duration-300 border rounded-lg bg-slate-100 group"
           >
             <div class="basis-1/2 p-4 md:py-8 md:pe-6">
@@ -274,74 +293,108 @@
         </div>
       </section>
       <section id="skill" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40 dark:bg-slate-800">
-        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white">My Skill</h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white"
+        >
+          My Skill
+        </h2>
         <div class="flex flex-wrap justify-center gap-4 w-full md:w-3/4 mx-auto">
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             HTML
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             CSS
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             JavaScript
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             PHP
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             Bootstrap
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             TailwindCSS
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             Flowbite
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             JQuery
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             React
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             ChartJS
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             CodeIgniter
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             Laravel
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             Figma
           </h3>
           <h3
+            data-aos="zoom-in"
+            data-aos-duration="800"
             class="py-3 px-6 border dark:bg-white dark:hover:bg-blue-600 border-slate-400 rounded-lg text-md hover:scale-105 hover:bg-blue-600 cursor-pointer hover:text-white duration-200"
           >
             Canva
@@ -349,10 +402,16 @@
         </div>
       </section>
       <section id="experience" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40 dark:bg-slate-800">
-        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white">My Experience</h2>
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white"
+        >
+          My Experience
+        </h2>
         <div class="w-10/12 xl:w-3/4 mx-auto">
           <ol class="relative border-s border-gray-200 dark:border-gray-700">
-            <li class="mb-10 ms-8">
+            <li data-aos="fade-up" data-aos-duration="800" class="mb-10 ms-8">
               <span
                 class="absolute flex items-center justify-center w-12 h-12 text-sm dark:ring-slate-800 border-slate-300 border bg-white rounded-full right-full translate-x-1/2 ring-8 ring-white dark:bg-blue-900"
               >
@@ -391,7 +450,7 @@
                 konsep desain minimalis dan profesional.
               </p>
             </li>
-            <li class="mb-10 ms-8">
+            <li data-aos="fade-up" data-aos-duration="800" class="mb-10 ms-8">
               <span
                 class="absolute flex items-center justify-center w-12 h-12 text-sm border-slate-300 border bg-white rounded-full right-full translate-x-1/2 ring-8 ring-white dark:ring-slate-800 dark:bg-blue-900"
               >
@@ -422,7 +481,7 @@
                 tanpa mengorbankan kualitas visual.
               </p>
             </li>
-            <li class="ms-8">
+            <li data-aos="fade-up" data-aos-duration="800" class="ms-8">
               <span
                 class="absolute flex items-center justify-center w-12 h-12 text-sm border-slate-300 border bg-white rounded-full right-full translate-x-1/2 ring-8 ring-white dark:ring-slate-800 dark:bg-blue-900"
               >
@@ -459,15 +518,25 @@
         </div>
       </section>
       <section id="contact" class="pt-32 px-4 sm:px-10 md:px-20 lg:px-40 dark:bg-slate-800">
-        <h2 class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white">Contact Me</h2>
-        <h3 class="text-md dark:text-slate-300 leading-8 w-full xl:w-3/4 mx-auto text-center">
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="text-2xl md:text-3xl font-medium mb-8 text-center dark:text-white"
+        >
+          Contact Me
+        </h2>
+        <h3
+          data-aos="fade-up"
+          data-aos-duration="800"
+          class="text-md dark:text-slate-300 leading-8 w-full xl:w-3/4 mx-auto text-center"
+        >
           Hubungi saya secara langsung melaui email
           <a href="" target="_blank" class="underline">musaganteng071@gmail.com</a> <br />
           atau melalui form dibawah ini.
         </h3>
         <div class="w-full md:w-3/4 xl:w-3/5 mx-auto mt-6">
           <form>
-            <div class="relative">
+            <div data-aos="fade-up" data-aos-duration="800" class="relative">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                 <svg
                   class="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -489,7 +558,7 @@
                 placeholder="Masukkan email anda"
               />
             </div>
-            <div class="mt-5 relative">
+            <div data-aos="fade-up" data-aos-duration="800" class="mt-5 relative">
               <div class="absolute inset-y-0 top-5 ps-3.5 pointer-events-none">
                 <svg
                   class="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -511,6 +580,8 @@
                 placeholder="Tinggalkan pesan anda disini..."
               ></textarea>
               <button
+                data-aos="fade-up"
+                data-aos-duration="800"
                 type="submit"
                 class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full mt-5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
@@ -539,7 +610,13 @@
     <!-- Fontawesome Icons -->
     <script src="./js/all.min.js"></script>
 
+    <!-- JQuery -->
     <script src="./js/jquery.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Custom JS -->
     <script src="./js/main.js"></script>
   </body>
 </html>
