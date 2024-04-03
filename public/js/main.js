@@ -21,6 +21,16 @@ $(document).ready(function () {
     // Membuat link mailto
     window.location.href = 'mailto:musaganteng071@gmail.com?body=' + encodeURIComponent(emailBody);
   });
+
+  // Navigation active handler
+  $('ul li a').click(function () {
+    $('ul li a').removeClass(
+      'text-white bg-blue-700 hover:bg-gray-100 md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-700'
+    );
+    $(this).addClass(
+      'text-white bg-blue-700 md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-700 md:dark:bg-transparent'
+    );
+  });
 });
 
 // AOS Initializing
