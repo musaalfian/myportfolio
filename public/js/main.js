@@ -12,6 +12,15 @@ $(document).ready(function () {
     $('#darkIcon').removeClass('hidden');
     $('body').removeClass('dark');
   });
+
+  // Email handler
+  $('#sendEmail').click(function (e) {
+    e.preventDefault(); // Menghindari submit form
+    var emailBody = 'Body email: ' + message;
+
+    // Membuat link mailto
+    window.location.href = 'mailto:musaganteng071@gmail.com?body=' + encodeURIComponent(emailBody);
+  });
 });
 
 // AOS Initializing

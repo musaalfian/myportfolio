@@ -130,7 +130,7 @@
         data-aos="zoom-out"
         data-aos-duration="800"
         id="home"
-        class="bg-gradient-to-b from-sky-300 to-sky-100 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-800 pt-32 lg:pt-40 px-4 sm:px-10 md:px-20 lg:px-40"
+        class=" bg-gradient-to-b from-sky-300 to-sky-100 dark:bg-gradient-to-b dark:from-slate-950 dark:to-slate-800 pt-32 lg:pt-40 px-4 sm:px-10 md:px-20 lg:px-40"
       >
         <div class="relative w-fit mx-auto">
           <img
@@ -142,7 +142,7 @@
           <div class="text-3xl absolute bottom-0 right-0">👋</div>
         </div>
         <h1
-          class="text-2xl md:text-3xl w-full xl:w-3/4 dark:text-slate-300 mx-auto text-center leading-normal md:leading-relaxed"
+          class="text-2xl md:text-3xl w-full xl:w-3/4 dark:text-slate-300 mx-auto text-center leading-normal md:leading-relaxed 2xl:w-1/2"
         >
           Hello, I'm <span class="font-bold dark:text-white">Musa</span>. I'm a
           <span class="font-bold dark:text-white">full-stack web developer</span> with
@@ -184,7 +184,7 @@
         <h2 data-aos="fade-up" data-aos-duration="800" class="text-2xl md:text-3xl font-medium mb-6 dark:text-white">
           About Me
         </h2>
-        <h3 data-aos="fade-up" data-aos-duration="800" class="text-md leading-8 mx-auto xl:w-3/4 dark:text-white">
+        <h3 data-aos="fade-up" data-aos-duration="800" class="text-md leading-8 mx-auto xl:w-3/4 2xl:w-1/2 dark:text-white">
           As a <span class="inline-block font-bold">cum laude</span> graduate in Computer Science from
           <span class="inline-block font-bold">Diponegoro University</span> , I bring academic excellence to every
           aspect of my work 🎓. With over
@@ -209,7 +209,7 @@
         >
           My Project
         </h2>
-        <div class="flex flex-col xl:w-3/4 mx-auto gap-10">
+        <div class="flex flex-col xl:w-3/4 2xl:w-1/2 mx-auto gap-10">
           <!-- POS Apotek -->
           <div
             data-aos="fade-up"
@@ -303,7 +303,7 @@
         >
           My Skill
         </h2>
-        <div class="flex flex-wrap justify-center gap-4 w-full md:w-3/4 mx-auto">
+        <div class="flex flex-wrap justify-center gap-4 w-full md:w-3/4 2xl:w-1/2 mx-auto">
           <h3
             data-aos="zoom-in"
             data-aos-duration="800"
@@ -412,7 +412,7 @@
         >
           My Experience
         </h2>
-        <div class="w-10/12 xl:w-3/4 mx-auto">
+        <div class="w-10/12 xl:w-3/4 2xl:w-1/2 mx-auto">
           <ol class="relative border-s border-gray-200 dark:border-gray-700">
             <li data-aos="fade-up" data-aos-duration="800" class="mb-10 ms-8">
               <span
@@ -532,7 +532,7 @@
           <br />
           or through the form below.
         </h3>
-        <div class="w-full md:w-3/4 xl:w-3/5 mx-auto mt-6">
+        <div class="w-full md:w-3/4 xl:w-3/5 2xl:w-1/2 mx-auto mt-6">
           <form>
             <div data-aos="fade-up" data-aos-duration="800" class="relative">
               <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -551,6 +551,7 @@
               </div>
               <input
                 type="text"
+                required
                 id="email-address-icon"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 py-4 px-8 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-blue-500"
                 placeholder="Enter your email"
@@ -573,11 +574,12 @@
               </div>
               <textarea
                 id="message"
+                required
                 rows="6"
                 class="block py-4 px-8 w-full ps-10 text-md text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-blue-500"
                 placeholder="Leave your message here"
               ></textarea>
-              <button
+              <button id="sendEmail"
                 type="submit"
                 class="text-white bg-blue-700 hover:bg-blue-800 duration-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full mt-5 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
