@@ -97,7 +97,7 @@
   "scripts": {
     "copy-flowbite": "shx cp node_modules/flowbite/dist/flowbite.min.js public/js/flowbite.min.js",
     "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
-    "build": "npm run copy-flowbite && npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch",
+    "build": "npm run copy-flowbite && npx tailwindcss -i ./src/input.css -o ./public/css/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
